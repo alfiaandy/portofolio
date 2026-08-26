@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfian Dwiyanto | Portofolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Style CSS) -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-400 selection:text-slate-900">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-teal-400 hover:text-teal-300 transition">
+                Alfian<span class="text-slate-100">.dev</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-teal-400 transition">Tentang</a>
+                <a href="#skills" class="hover:text-teal-400 transition">Keahlian</a>
+                <a href="#projects" class="hover:text-teal-400 transition">Proyek</a>
+                <a href="#contact" class="hover:text-teal-400 transition">Kontak</a>
+            </div>
+            <!-- Toggle Mobile Menu (Nanti diaktifkan lewat JS) -->
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-4xl text-center">
+            <span
+                class="inline-block text-teal-400 font-mono text-sm mb-4 px-3 py-1 bg-teal-400/10 rounded-full border border-teal-400/20">
+                👋 Halo, Saya Alfian Dwiyanto
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Membangun Pengalaman Web yang <span class="text-teal-400">Responsif</span> & <span
+                    class="text-teal-400">Interaktif</span>
+            </h1>
+            <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Saya seorang Junior Web Developer yang menyukai HTML, CSS, JavaScript, dan teknologi web modern.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects"
+                    class="bg-teal-500 text-slate-950 font-semibold px-6 py-3 rounded-lg hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+                    Lihat Proyek
+                </a>
+                <a href="#contact"
+                    class="border border-slate-700 bg-slate-800/50 text-slate-300 font-semibold px-6 py-3 rounded-lg hover:bg-slate-800 hover:text-white transition">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="py-20 px-6 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-100 mb-8 flex items-center gap-3">
+                Tentang Saya
+            </h2>
+            <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                Saya fokus mempelajari dasar-dasar pengembangan web secara mendalam. Bagi saya, kode yang bersih,
+                performa yang cepat, serta tampilan yang mudah digunakan adalah prioritas utama dalam membangun sebuah
+                situs web.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="py-20 px-6 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-100 mb-12 flex items-center gap-3">
+                Keahlian & Teknologi
+            </h2>
+
+            <!-- Container tempat data keahlian di-render dari JS -->
+            <div id="skills-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Data keahlian akan dimuat otomatis di sini -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="py-20 px-6 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-100 mb-12 flex items-center gap-3">
+                Proyek Pilihan
+            </h2>
+
+            <!-- Container Kartu Proyek (Rencana di-render via Vanilla JS secara dinamis) -->
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Data proyek akan muncul di sini dari JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-800 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-100 mb-4 flex justify-center items-center gap-3">
+                Mari Terhubung
+            </h2>
+            <p class="text-slate-400 mb-8">
+                Tertarik bekerja sama atau ingin sekadar berdiskusi seputar web development? Silakan kirim pesan!
+            </p>
+            <a href="mailto:emailanda@example.com"
+                class="inline-block bg-teal-500 text-slate-950 font-semibold px-8 py-4 rounded-lg hover:bg-teal-400 transition">
+                Kirim Email
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-8 border-t border-slate-800 text-center text-sm text-slate-500">
+        <p>© 2026 Alfian Dwiyanto.</p>
+    </footer>
+
+    <!-- File JavaScript -->
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

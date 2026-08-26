@@ -1,0 +1,9 @@
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Dependencies / Temporary files
+node_modules/
+dist/
+.env
