@@ -3,24 +3,23 @@ const projects = [
   {
     title: "Website Kedai Gatheli",
     description:
-      "Website Landing Page Untuk Melihat Menu Dan Memesan Produk Kopi",
+      "Website Landing Page Untuk Melihat Menu Dan Memesan Produk Kopi, responsif dengan layout modern dan integrasi form kontak.",
     tech: ["HTML", "Tailwind CSS", "JavaScript"],
     demoLink: "#",
     githubLink: "#",
   },
   {
-    title: "Kalkulator Keuangan",
-    description:
-      "Alat bantu hitung pengeluaran bulanan sederhana dengan visualisasi ringkasan biaya.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    title: "Design UIUX Aplikasi Kula Kopi",
+    description: "Membuat wireferame hingga prototyping ",
+    tech: ["Figma"],
     demoLink: "#",
     githubLink: "#",
   },
   {
-    title: "Web Landing Page",
+    title: "Web Reservasi Lapangan",
     description:
-      "Desain landing page responsif dengan layout modern dan integrasi form kontak.",
-    tech: ["HTML", "Tailwind CSS"],
+      "SM Sport Center adalah aplikasi reservasi lapangan olahraga berbasis web yang memudahkan pengguna melakukan pemesanan secara online serta membantu admin mengelola data reservasi, transaksi, dan laporan dengan lebih cepat, akurat, dan terstruktur.",
+    tech: ["HTML5", "PHP", "CSS3", "MySQL", "JavaScript"],
     demoLink: "#",
     githubLink: "#",
   },
